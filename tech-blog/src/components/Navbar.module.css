@@ -1,0 +1,20 @@
+.navComponent {
+  background-color: #1a0047;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 102px;
+  height: 95px;
+  padding: 0px 200px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navComponent Link {
+  text-decoration: none;
+  color: white;
+  font-size: 32px;
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
