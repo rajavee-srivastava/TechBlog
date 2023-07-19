@@ -1,0 +1,63 @@
+/* No image styles */
+
+.heroComponentNoImage {
+  /* background-image: ; */
+  height: 80vh;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Hero Component with Image */
+.heroComponent {
+  /* background-image: ; */
+  height: 80vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.heroText {
+  max-width: 50%;
+  position: absolute; /* Position the hero text absolutely */
+  top: 40%; /* Move it 50% from the top */
+  left: 30%; /* Adjust the left position to your preference */
+  transform: translateY(-50%); /* Center the text vertically */
+}
+
+.title {
+  color: #fff;
+  font-family: Source Sans Pro;
+  font-size: 128px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 105.2%; /* 134.656px */
+}
+
+.subText {
+  color: #fff;
+  font-family: Nunito Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.aboutBttn {
+  display: flex;
+  padding: 5px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 20px;
+  background: #9b77da;
+  color: #fff;
+  text-align: center;
+  font-family: Nunito;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
