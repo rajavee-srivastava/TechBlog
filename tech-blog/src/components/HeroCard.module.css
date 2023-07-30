@@ -1,45 +1,50 @@
 /* No image styles */
 
 .heroComponentNoImage {
-  /* background-image: ; */
+  background-image: url('../images/hero_bg.png');
   height: 80vh;
   position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* Hero Component with Image */
 .heroComponent {
-  /* background-image: ; */
+  background-image: url('../images/hero_bg.png');
   height: 80vh;
-  position: relative;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
   justify-content: space-between;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .heroText {
-  max-width: 50%;
-  position: absolute; /* Position the hero text absolutely */
-  top: 40%; /* Move it 50% from the top */
-  left: 30%; /* Adjust the left position to your preference */
-  transform: translateY(-50%); /* Center the text vertically */
+  max-width: 60%;
+  position: relative; /* Position the hero text absolutely */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  justify-content: center;
+  transform: translateX(40%);
 }
 
 .title {
   color: #fff;
-  font-family: Source Sans Pro;
-  font-size: 128px;
+  font-family: "Source Sans 3";
+  font-size: 98px;
   font-style: normal;
   font-weight: 700;
-  line-height: 105.2%; /* 134.656px */
 }
 
 .subText {
   color: #fff;
-  font-family: Nunito Sans;
-  font-size: 32px;
+  font-family: "Nunito Sans";
+  font-size: 28px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -56,8 +61,24 @@
   color: #fff;
   text-align: center;
   font-family: Nunito;
-  font-size: 32px;
+  font-size: 28px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+
+.img {
+  padding: 40px 72px 40px 64px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.img img{
+  width: auto;
+  height: 80%;
+}
+
+.link{
+  all: unset;
 }

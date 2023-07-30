@@ -1,0 +1,86 @@
+h2 {
+  padding: 50px 150px 32px 150px;
+  color: #39065a;
+  font-family: Nunito Sans;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.main {
+  padding: 50px 150px 145px 150px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.form {
+  all: unset;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.form label {
+  color: #3a2769;
+  font-family: Nunito;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.form label input {
+  border-radius: 22px;
+  font-size: 22px;
+  border: 1px solid #3a2769;
+  background: #e1e1e1;
+  width: 700px;
+  height: 80px;
+  padding: 0 0 0 20px;
+}
+
+.form label textarea {
+  width: 700px;
+  padding: 20px 0 0 20px;
+  height: 180px;
+  border-radius: 17px;
+  font-size: 22px;
+  border: 1px solid #3a2769;
+  background: #e1e1e1;
+}
+
+.form button {
+  width: 120px;
+  height: auto;
+  display: flex;
+  padding: 5px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 20px;
+  background: #9b77da;
+  color: #fff;
+  text-align: center;
+  font-family: Nunito Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.main_img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.seperator {
+  background-image: url("../images/hero_bg.png");
+  height: 135px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

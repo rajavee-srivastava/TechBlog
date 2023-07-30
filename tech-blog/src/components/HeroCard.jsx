@@ -1,5 +1,6 @@
 import React from "react";
-import styles from "HeroCard.module.css";
+import { Link } from "react-router-dom";
+import styles from "./HeroCard.module.css";
 
 const HeroCard = ({ image }) => {
   if (image) {
@@ -9,12 +10,12 @@ const HeroCard = ({ image }) => {
         <div className={styles.heroText}>
           <div className={styles.title}>Welcome to Stacked!</div>
           <div className={styles.subText}>
-            This website is for enthusiastic developers to read and share blog posts as well as personal projects.
+            This website is for enthusiastic developers to read and share blog
+            posts as well as personal projects.
           </div>
-          <button className={styles.aboutBttn}>Know More!</button>
         </div>
         <div className={styles.img}>
-          <img src={image} alt="Hero Image" />
+          <img src={image} alt="Hero" />
         </div>
       </div>
     );
@@ -25,9 +26,12 @@ const HeroCard = ({ image }) => {
         <div className={styles.heroText}>
           <div className={styles.title}>Welcome to Stacked!</div>
           <div className={styles.subText}>
-            This website is for enthusiastic developers to read and share blog posts as well as personal projects.
+            This website is for enthusiastic developers to read and share blog
+            posts as well as personal projects.
           </div>
-          <button className={styles.aboutBttn}>Know More!</button>
+          <button className={styles.aboutBttn}>
+            <Link to="/about" className={styles.link}>Know More!</Link>
+          </button>
         </div>
       </div>
     );

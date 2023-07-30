@@ -1,31 +1,75 @@
 import React from "react";
-import Header from "../components/Header";
-import HeroBlock from "../components/HeroBlock";
+import Navbar from "../components/Navbar";
+import HeroCard from "../components/HeroCard";
+import SubsCard from "../components/SubsCard";
 import Footer from "../components/Footer";
-
+import styles from "./About.module.css";
+import doorImage from "../images/Door.png";
+import blog from "../images/blog.png";
 const About = () => {
   return (
-    <div>
-      <Header />
-      <h1>This is the About Page</h1>
-      <HeroBlock />
-      <p>
-        Cupidatat labore irure nulla labore reprehenderit dolor officia veniam
-        sunt fugiat elit. Nulla laboris irure tempor amet nostrud et qui dolor
-        esse aliqua labore Lorem minim. Nisi cupidatat ipsum laboris nulla irure
-        excepteur et nostrud officia laboris aliquip excepteur elit irure.Amet
-        deserunt irure veniam non ipsum anim ut. Lorem ad sint sit id nisi
-        laborum ut dolore. Non tempor ullamco qui fugiat laboris laborum tempor.
-        Nulla sint amet deserunt Lorem fugiat aliqua magna dolore labore ex
-        velit consectetur magna nulla eiusmod reprehenderit minim in eu.
-        Exercitation cupidatat sit ea quis nostrud laboris dolor labore nulla
-        fugiat proident est velit.Irure dolore laboris minim id nostrud veniam.
-        Labore laborum proident in non ullamco reprehenderit deserunt dolore
-        nostrud mollit nostrud dolor. Sit do tempor dolor laboris et quis ex
-        excepteur exercitation velit voluptate duis aliq
-      </p>
-      <Footer/>
-    </div>
+    <>
+      <Navbar />
+      <HeroCard image={doorImage} />
+      <div className={styles.text}>
+        <div className={styles.title}>Fueling Curiosity and Driving Growth</div>
+        <div className={styles.content}>
+          At Stacked, we thrive on curiosity and the pursuit of continuous
+          growth. Our journey as web developers is marked by a deep-seated
+          passion for exploring the latest trends and mastering the
+          ever-evolving technologies. From staying up-to-date with the latest
+          frameworks to experimenting with innovative design concepts, we never
+          stop learning. This insatiable curiosity drives us to push the
+          boundaries of what's possible, ensuring that every project we
+          undertake showcases our commitment to excellence.
+        </div>
+        <div className={styles.content}>
+          At Stacked, we thrive on curiosity and the pursuit of continuous
+          growth. Our journey as web developers is marked by a deep-seated
+          passion for exploring the latest trends and mastering the
+          ever-evolving technologies. From staying up-to-date with the latest
+          frameworks to experimenting with innovative design concepts, we never
+          stop learning. This insatiable curiosity drives us to push the
+          boundaries of what's possible, ensuring that every project we
+          undertake showcases our commitment to excellence.
+        </div>
+        <div className={styles.img}>
+          <img src={blog} alt="blog"></img>
+        </div>
+        <div className={styles.content}>
+          At Stacked, we thrive on curiosity and the pursuit of continuous
+          growth. Our journey as web developers is marked by a deep-seated
+          passion for exploring the latest trends and mastering the
+          ever-evolving technologies. From staying up-to-date with the latest
+          frameworks to experimenting with innovative design concepts, we never
+          stop learning. This insatiable curiosity drives us to push the
+          boundaries of what's possible, ensuring that every project we
+          undertake showcases our commitment to excellence.
+        </div>
+        <div className={styles.content}>
+          At Stacked, we thrive on curiosity and the pursuit of continuous
+          growth. Our journey as web developers is marked by a deep-seated
+          passion for exploring the latest trends and mastering the
+          ever-evolving technologies. From staying up-to-date with the latest
+          frameworks to experimenting with innovative design concepts, we never
+          stop learning. This insatiable curiosity drives us to push the
+          boundaries of what's possible, ensuring that every project we
+          undertake showcases our commitment to excellence.
+        </div>
+        <div className={styles.content}>
+          At Stacked, we thrive on curiosity and the pursuit of continuous
+          growth. Our journey as web developers is marked by a deep-seated
+          passion for exploring the latest trends and mastering the
+          ever-evolving technologies. From staying up-to-date with the latest
+          frameworks to experimenting with innovative design concepts, we never
+          stop learning. This insatiable curiosity drives us to push the
+          boundaries of what's possible, ensuring that every project we
+          undertake showcases our commitment to excellence.
+        </div>
+      </div>
+      <SubsCard />
+      <Footer />
+    </>
   );
 };
 

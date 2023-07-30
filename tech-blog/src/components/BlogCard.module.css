@@ -1,0 +1,46 @@
+.blogcard {
+  display: flex;
+  height: 710px;
+  width: 385;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.blogcard img {
+  height: 450px;
+}
+
+.blogcard h2 {
+  color: #39065a;
+  font-family: Nunito Sans;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.blogcard p {
+  color: #000;
+  font-family: Nunito;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.metadata {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+.metadata span {
+  color: #39065a;
+  font-family: Nunito Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}

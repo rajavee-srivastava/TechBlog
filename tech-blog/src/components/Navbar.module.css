@@ -9,11 +9,11 @@
   align-items: center;
 }
 
-.navComponent Link {
+.navLink {
   text-decoration: none;
   color: white;
   font-size: 32px;
-  font-family: Source Sans Pro;
+  font-family: "Source Sans 3";
   font-style: normal;
   font-weight: 700;
   line-height: normal;

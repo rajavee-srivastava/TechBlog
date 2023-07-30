@@ -1,0 +1,65 @@
+.projectcard:nth-child(even) {
+  background: #dddbe0;
+}
+.projectcard:nth-child(odd) {
+  background: #e1d9ee;
+}
+
+.projectcard {
+  display: flex;
+  padding: 0px 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 37px;
+  align-self: stretch;
+}
+
+.text {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.title {
+  color: #39065a;
+  font-family: Nunito Sans;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.desc {
+  color: #000;
+  font-family: Nunito;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.Linkbttn {
+  height: 44px;
+  width: 170px;
+  padding: 5px 20px;
+  justify-content: center;
+  border-radius: 20px;
+  background: #9b77da;
+}
+
+.Linkbttn a {
+  color: #fff;
+  text-align: center;
+  font-family: Nunito Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.projectcard img {
+  width: 250px;
+  height: 450px;
+  border-radius: 35px;
+}

@@ -1,19 +1,18 @@
 from django.contrib import admin
-from .models import Category, Post, Project, Image 
+from .models import Idea, Category, Blog, Project
 # Register your models here.
 
-class PostAdmin(admin.ModelAdmin):
-    list_display = ('title','created_at', 'category')
-    search_fields = ('title','created_at','category')
-    list_filter = ('created_at',)
+class BlogAdmin(admin.ModelAdmin):
+    list_display = ('title','date')
+    search_fields = ('title','date','category')
+    list_filter = ('date',)
 
 class ProjectAdmin(admin.ModelAdmin):
-    list_display = ('title','created_at')
-    search_fields = ('title','created_at')
-    list_filter = ('created_at',)
+    list_display = ('title',)
+    search_fields = ('title',)
 
 admin.site.register(Category)
-admin.site.register(Image)
-admin.site.register(Post, PostAdmin)
+admin.site.register(Idea)
+admin.site.register(Blog, BlogAdmin)
 admin.site.register(Project, ProjectAdmin)
 

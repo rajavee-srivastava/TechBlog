@@ -1,0 +1,93 @@
+.textComp {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 150px;
+  gap: 40px;
+}
+
+.textComp h3 {
+  all: unset;
+  color: #39065a;
+  font-family: Nunito Sans;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.subtext {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.subtext p {
+  all: unset;
+  color: #000;
+  font-family: Nunito;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.navCards {
+  display: flex;
+  flex-direction: row;
+  padding: 50px 150px;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.img1 {
+  height: 700px;
+  width: 600px;
+  background-image: url("../images/about-img.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.col2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.img2 {
+  height: 500px;
+  width: 600px;
+  background-image: url("../images/blog-img.png");
+  position: relative;
+  border-radius: 20px;
+}
+
+.img3 {
+  height: 500px;
+  width: 600px;
+  background-image: url("../images/project-img.png");
+  position: relative;
+  border-radius: 20px;
+}
+
+.navBttn {
+  all: unset;
+  cursor: pointer;
+  background: #9b77da;
+  color: #fff;
+  text-align: center;
+  font-family: Nunito Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 5px 20px;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+}
