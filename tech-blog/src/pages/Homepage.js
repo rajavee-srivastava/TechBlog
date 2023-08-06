@@ -32,8 +32,8 @@ const Homepage = () => {
 
   return (
     <>
-      <HeroCard />
       <Navbar />
+      <HeroCard />
       <div className={styles.textComp}>
         <h3>Where Creativity meets Technical Expertise ...</h3>
         <div className={styles.subtext}>
@@ -43,8 +43,18 @@ const Homepage = () => {
             creating unique digital experiences that leave a lasting impression.
             With an unwavering dedication to innovation and a commitment to
             excellence,
+            At Stacked, we believe in the transformative power of web
+            development. Our team of skilled professionals specializes in
+            creating unique digital experiences that leave a lasting impression.
+            With an unwavering dedication to innovation and a commitment to
+            excellence,
           </p>
           <p>
+            At Stacked, we believe in the transformative power of web
+            development. Our team of skilled professionals specializes in
+            creating unique digital experiences that leave a lasting impression.
+            With an unwavering dedication to innovation and a commitment to
+            excellence,
             At Stacked, we believe in the transformative power of web
             development. Our team of skilled professionals specializes in
             creating unique digital experiences that leave a lasting impression.

@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "stacked"
+version = "0.1.0"
+description = "A fullstack website built with Django and React"
+authors = ["Rajavee Srivastava"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "^4.2.4"
+django-cors-headers = "^4.2.0"
+django-ckeditor = "^6.7.0"
+mysqlclient = "^2.2.0"
+djangorestframework = "^3.14.0"
+pillow = "^10.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

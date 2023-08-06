@@ -2,7 +2,7 @@
 
 .heroComponentNoImage {
   background-image: url('../images/hero_bg.png');
-  height: 80vh;
+  height: 92vh;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -14,7 +14,7 @@
 /* Hero Component with Image */
 .heroComponent {
   background-image: url('../images/hero_bg.png');
-  height: 80vh;
+  height: 92vh;
   display: grid;
   grid-template-columns: 2fr 1fr;
   justify-content: space-between;
@@ -23,20 +23,19 @@
 }
 
 .heroText {
-  max-width: 60%;
-  position: relative; /* Position the hero text absolutely */
+  max-width: 45%; 
+  height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 20px;
-  justify-content: center;
-  transform: translateX(40%);
+  gap: 30px;
+  transform: translateX(10vw) translateY(30vh);
 }
 
 .title {
   color: #fff;
   font-family: "Source Sans 3";
-  font-size: 98px;
+  font-size: 50px;
   font-style: normal;
   font-weight: 700;
 }
@@ -44,7 +43,7 @@
 .subText {
   color: #fff;
   font-family: "Nunito Sans";
-  font-size: 28px;
+  font-size: 22px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -61,7 +60,7 @@
   color: #fff;
   text-align: center;
   font-family: Nunito;
-  font-size: 28px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;

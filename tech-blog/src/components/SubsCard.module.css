@@ -1,7 +1,7 @@
 .SubsComp {
   background: #3a2769;
   display: flex;
-  padding: 50px 150px;
+  padding: 50px 50px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -11,10 +11,10 @@
 .title {
   color: #fff;
   text-align: center;
-  font-family: Nunito Sans;
-  font-size: 38px;
+  font-family: "Nunito Sans";
+  font-size: 28px;
   font-style: normal;
-  font-weight: 800;
+  font-weight: 600;
   line-height: normal;
 }
 

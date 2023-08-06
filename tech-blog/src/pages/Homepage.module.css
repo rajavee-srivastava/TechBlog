@@ -3,13 +3,14 @@
   flex-direction: column;
   padding: 50px 150px;
   gap: 40px;
+  background-color: #e2d1ff;
 }
 
 .textComp h3 {
   all: unset;
   color: #39065a;
   font-family: Nunito Sans;
-  font-size: 48px;
+  font-size: 28px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -18,31 +19,32 @@
 .subtext {
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  gap: 50px;
+
 }
 
 .subtext p {
   all: unset;
-  color: #000;
+  color: purple;
   font-family: Nunito;
-  font-size: 28px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  text-align: justify;
 }
 
 .navCards {
   display: flex;
   flex-direction: row;
-  padding: 50px 150px;
-  gap: 40px;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  background-color: #e2d1ff;
 }
 
 .img1 {
-  height: 700px;
-  width: 600px;
+  height: 500px;
+  width: 450px;
   background-image: url("../images/about-img.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -58,16 +60,16 @@
 }
 
 .img2 {
-  height: 500px;
-  width: 600px;
+  height: 300px;
+  width: 400px;
   background-image: url("../images/blog-img.png");
   position: relative;
   border-radius: 20px;
 }
 
 .img3 {
-  height: 500px;
-  width: 600px;
+  height: 300px;
+  width: 400px;
   background-image: url("../images/project-img.png");
   position: relative;
   border-radius: 20px;
@@ -80,11 +82,11 @@
   color: #fff;
   text-align: center;
   font-family: Nunito Sans;
-  font-size: 32px;
+  font-size: 16px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   line-height: normal;
-  padding: 5px 20px;
+  padding: 5px 10px;
   position: absolute;
   bottom: 30px;
   left: 50%;

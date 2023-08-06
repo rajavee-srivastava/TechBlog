@@ -2,8 +2,8 @@
   background-color: #1a0047;
   display: flex;
   flex-wrap: wrap;
-  padding: 20px 102px;
-  height: 95px;
+  padding: 20px 80px;
+  height: 60px;
   padding: 0px 200px;
   justify-content: space-between;
   align-items: center;
@@ -12,9 +12,9 @@
 .navLink {
   text-decoration: none;
   color: white;
-  font-size: 32px;
-  font-family: "Source Sans 3";
+  font-size: 20px;
+  font-family: "Inter";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   line-height: normal;
 }
