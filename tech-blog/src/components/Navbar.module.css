@@ -1,0 +1,17 @@
+.Navbar {
+  background-image: url("../images/nav_bg.png");
+  padding: 10px 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_text {
+  text-decoration: none;
+  color: #fff;
+  font-family: Source Sans Pro;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}

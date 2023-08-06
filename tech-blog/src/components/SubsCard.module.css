@@ -1,0 +1,50 @@
+.rect {
+  background: #3a2769;
+}
+
+.text {
+  display: flex;
+  padding: 50px 247px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 36px;
+}
+
+.text h4 {
+  align-self: stretch;
+  color: #fff;
+  text-align: center;
+  font-family: Nunito Sans;
+  font-size: 38px;
+
+  font-weight: 800;
+}
+
+.text p {
+  align-self: stretch;
+  color: #fff;
+  text-align: center;
+  font-family: Nunito;
+  font-size: 28px;
+
+  font-weight: 700;
+}
+
+.subsBttn {
+  all: unset;
+  display: flex;
+  padding: 5px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 20px;
+  background: #9b77da;
+  color: #fff;
+  text-align: center;
+  font-family: Nunito Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}

@@ -1,0 +1,118 @@
+.hero_bg {
+  background: url("../images/hero-bg.png"), lightgray 50% / cover no-repeat;
+  width: 1440px;
+  height: 800px;
+}
+
+.hero_text {
+  position: absolute;
+  left: 60px;
+  top: 254px;
+  display: flex;
+  width: 60%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.hero_title {
+  all: unset;
+  color: #fff;
+  font-family: Source Sans Pro;
+  font-size: 128px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 105.2%; /* 134.656px */
+}
+
+.hero_subtext {
+  all: unset;
+  color: #fff;
+  font-family: Nunito Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.content {
+  padding: 56px 72px;
+}
+
+.home_text_cont {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.content h2 {
+  color: #39065a;
+  font-family: Nunito Sans;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.content p {
+  color: #000;
+  font-family: Nunito;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.nav_cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.img_1 {
+  background: url("../images/about-img.png");
+  background-repeat: no-repeat;
+    height: 690px;
+    width: 606px;
+}
+
+.nav_col2 {
+  display: grid;
+  grid-template-rows: auto;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.img_2 {
+  background: linear-gradient(
+      0deg,
+      rgba(57, 6, 90, 0.4) 0%,
+      rgba(57, 6, 90, 0.4) 100%
+    ),
+    url("../images/about-img.png"), lightgray 50% / cover no-repeat;
+  background-blend-mode: overlay, normal;
+}
+.img_3 {
+  background: linear-gradient(
+      0deg,
+      rgba(57, 6, 90, 0.4) 0%,
+      rgba(57, 6, 90, 0.4) 100%
+    ),
+    url("../images/about-img.png"), lightgray 50% / cover no-repeat;
+  background-blend-mode: overlay, normal;
+}
+
+.timg1{
+    text-decoration: none;
+    background: url("../images/text_img.png");
+    width: 348px;
+    height: 348px; }
+
+.timg2{
+    background: url("../images/text_img2.png");
+    width: 217px;
+    height: 217px; 
+    position: relative;
+    left:80px;
+    top:60px;
+}

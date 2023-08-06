@@ -1,0 +1,20 @@
+.image {
+  width: 325px;
+  height: 250px;
+}
+
+.blog {
+  width: 325px;
+  height: 250px;
+  background: linear-gradient(0deg, #39065a 0%, #39065a 100%),
+    lightgray 50% / cover no-repeat;
+  background-blend-mode: soft-light, normal;
+}
+
+.project {
+  width: 300px;
+  height: 400px;
+  background: linear-gradient(0deg, #39065a 0%, #39065a 100%),
+    lightgray 50% / cover no-repeat;
+  background-blend-mode: soft-light, normal;
+}
