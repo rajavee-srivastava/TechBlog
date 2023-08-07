@@ -16,6 +16,10 @@
   align-self: stretch;
 }
 
+.socials a{
+  cursor: pointer;
+}
+
 .copyright {
   color: #000;
   text-align: center;

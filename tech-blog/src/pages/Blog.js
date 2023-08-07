@@ -24,7 +24,7 @@ const Blog = () => {
       <div className={styles.blogs}>
         {blogData.map((blog) => (
           <BlogCard
-            key={blog.id}
+            blogId={blog.blogId}
             image={blog.image}
             title={blog.title}
             shortDesc={blog.shortDesc}

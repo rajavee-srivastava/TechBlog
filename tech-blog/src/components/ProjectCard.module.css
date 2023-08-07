@@ -1,47 +1,48 @@
 .projectcard:nth-child(even) {
-  background: #dddbe0;
+  background: #a591c4;
 }
 .projectcard:nth-child(odd) {
-  background: #e1d9ee;
+  background: #cdb7f1;
 }
 
 .projectcard {
   display: flex;
-  padding: 0px 30px;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 37px;
-  align-self: stretch;
+  border-radius: 15px;
+  padding: 18px;
 }
 
 .text {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: flex-start;
-  gap: 40px;
 }
 
 .title {
+  all: unset;
   color: #39065a;
   font-family: Nunito Sans;
-  font-size: 48px;
+  font-size: 32px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
 
 .desc {
+  all: unset;
   color: #000;
   font-family: Nunito;
-  font-size: 28px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 
 .Linkbttn {
-  height: 44px;
-  width: 170px;
+  all: unset;
+  cursor: pointer;
   padding: 5px 20px;
   justify-content: center;
   border-radius: 20px;
@@ -52,14 +53,28 @@
   color: #fff;
   text-align: center;
   font-family: Nunito Sans;
-  font-size: 32px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
 
-.projectcard img {
-  width: 250px;
-  height: 450px;
-  border-radius: 35px;
+.images {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+
+.img1{
+  width: 140px;
+  height: 180px;
+  border-radius: 18px;
+}
+
+
+.img2{
+  width: 120px;
+  height: 150px;
+  border-radius: 18px;
 }

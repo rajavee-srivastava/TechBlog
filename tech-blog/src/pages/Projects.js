@@ -12,10 +12,11 @@ const Projects = () => {
 
   useEffect(() => {
     // Fetch data from the API
-    fetch("http://127.0.0.1:8000/api/projects")
+    fetch("http://localhost:8000/api/projects")
       .then((response) => response.json())
       .then((data) => setProjectData(data));
   }, []);
+
   return (
     <>
       <Navbar />
@@ -23,7 +24,6 @@ const Projects = () => {
       <div className={styles.projects}>
         {projectData.map((project) => (
           <ProjectCard
-            key={project.id}
             title={project.title}
             desc={project.desc}
             projectLink={project.projectLink}

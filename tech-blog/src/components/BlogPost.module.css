@@ -1,9 +1,31 @@
-h1 {
+.blogpost {
+  padding: 50px 150px;
+}
+
+.title {
+  all: unset;
   color: #39065a;
   font-family: Nunito Sans;
-  font-size: 64px;
-  font-style: normal;
+  font-size: 40px;
   font-weight: 700;
-  line-height: normal;
-  padding: 50px 150px;
+  text-align: justify;
+}
+
+.meta {
+  color: #39065a;
+  font-family: Nunito Sans;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.img{
+  max-width: 100%;
+}
+
+.content {
+  color: #000;
+  font-family: Nunito;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: justify;
 }

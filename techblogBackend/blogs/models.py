@@ -5,7 +5,6 @@ from ckeditor.fields import RichTextField
 class Idea(models.Model):
     id = models.AutoField(primary_key=True)
     email = models.EmailField()
-    idea = models.TextField()
 
     def __str__(self):
         return self.email
@@ -19,11 +18,11 @@ class Category(models.Model):
 
 
 class Blog(models.Model):
-    key = models.AutoField(primary_key=True)
+    blogId = models.AutoField(primary_key=True)
     title = models.CharField(max_length=200)
     shortDesc = models.CharField(max_length=300)
     content = RichTextField()
-    date = models.DateTimeField(auto_now_add=True)
+    date = models.DateField(auto_now_add=True)
     category = models.ManyToManyField(Category)
     image = models.ImageField(upload_to='uploads/')
 

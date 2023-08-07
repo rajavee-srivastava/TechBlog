@@ -5,7 +5,7 @@ from blogs.models import Idea, Category, Blog, Project
 class IdeaSerializer(serializers.ModelSerializer):
     class Meta:
         model = Idea
-        fields = ['id', 'email', 'idea']
+        fields = ['id', 'email']
 
 
 class CategorySerializer(serializers.ModelSerializer):
@@ -15,9 +15,13 @@ class CategorySerializer(serializers.ModelSerializer):
 
 
 class BlogSerializer(serializers.ModelSerializer):
+    category = CategorySerializer(many=True)
+
+    # Custom date format
+    date = serializers.DateField(format="%d, %b %Y")
     class Meta:
         model = Blog
-        fields = ['key', 'title', 'shortDesc',
+        fields = ['blogId', 'title', 'shortDesc',
                   'content', 'date', 'category', 'image']
 
 

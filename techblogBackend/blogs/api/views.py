@@ -68,3 +68,10 @@ def project_list(request):
             serializer.save()
             return Response(serializer.data, status=201)
         return Response(serializer.errors, status=400)
+
+@api_view(['GET'])
+def latest_blogs(request):
+    if request.method == 'GET':
+        latest_blogs = Blog.objects.order_by('date')[:3]
+        serializer = BlogSerializer(latest_blogs, many=True)
+        return Response(serializer.data)

@@ -50,6 +50,8 @@
 }
 
 .aboutBttn {
+  all: unset;
+  cursor: pointer;
   display: flex;
   padding: 5px 20px;
   justify-content: center;
@@ -74,8 +76,9 @@
 }
 
 .img img{
-  width: auto;
-  height: 80%;
+  max-width: 100%;
+  min-width: 350px;
+  height: auto;
 }
 
 .link{

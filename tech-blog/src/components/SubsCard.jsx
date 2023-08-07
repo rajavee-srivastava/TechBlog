@@ -3,42 +3,45 @@ import styles from "./SubsCard.module.css";
 
 const SubsCard = () => {
   const apiEndpoint = "http://127.0.0.1:8000/api/subs"; // Replace this with your actual API endpoint URL
-  const [idea, setIdea] = useState("");
-
-  const handleSubmit = (event) => {
+  const [email, setEmail] = useState("");
+  
+  const handleSubmit = async (event) => {
     event.preventDefault();
-
-    // Check if the idea is not empty before making the API request
-    if (idea.trim() === "") {
-      alert("Please enter an idea before submitting.");
+  
+    // Check if the email is not empty before making the API request
+    if (email.trim() === "") {
+      alert("Please enter an email before submitting.");
       return;
     }
-
-    // Make the API POST request
-    fetch(apiEndpoint, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ idea: idea }),
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        // Handle the API response here if needed
-        console.log("API response:", data);
-        // Optionally, you can show a success message to the user
-        alert("Idea submitted successfully!");
-      })
-      .catch((error) => {
-        // Handle errors here if needed
-        console.error("API error:", error);
-        // Optionally, you can show an error message to the user
-        alert("Failed to submit idea. Please try again later.");
+  
+    try {
+      // Make the API POST request
+      const response = await fetch(apiEndpoint, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email: email }),
       });
-
-    // Reset the input field after the form submission
-    setIdea("");
+  
+      if (!response.ok) {
+        // Handle non-successful responses (status codes other than 2xx)
+        throw new Error("Failed to submit email.");
+      }
+  
+      // Optionally, you can show a success message to the user
+      alert("Email sent! We'll get back to you shortly.");
+  
+      // Reset the input field after the form submission
+      setEmail("");
+    } catch (error) {
+      // Handle errors here
+      console.error("API error:", error);
+      // Optionally, you can show an error message to the user
+      alert("Failed to submit email. Please try again later.");
+    }
   };
+  
 
   return (
     <div className={styles.SubsComp}>
@@ -50,8 +53,8 @@ const SubsCard = () => {
         <input
           type="text"
           placeholder="Enter your email"
-          value={idea}
-          onChange={(e) => setIdea(e.target.value)}
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
         />
         <button type="submit">Send</button>
       </form>

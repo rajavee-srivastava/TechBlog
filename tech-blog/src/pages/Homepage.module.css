@@ -20,7 +20,6 @@
   display: flex;
   flex-direction: row;
   gap: 50px;
-
 }
 
 .subtext p {
@@ -40,16 +39,23 @@
   justify-content: space-between;
   align-items: center;
   background-color: #e2d1ff;
+  padding: 50px 150px;
+  gap: 32px;
+}
+
+.navCards > * {
+  flex-grow: 1;
 }
 
 .img1 {
-  height: 500px;
-  width: 450px;
+  position: relative;
+  max-width: 100%;
+  min-width: 150px;
+  max-height: auto;
+  min-height: 300px;
   background-image: url("../images/about-img.png");
   background-size: cover;
   background-repeat: no-repeat;
-  position: relative;
-  justify-content: center;
   border-radius: 20px;
 }
 
@@ -60,23 +66,32 @@
 }
 
 .img2 {
-  height: 300px;
-  width: 400px;
-  background-image: url("../images/blog-img.png");
   position: relative;
+  max-width: 100%;
+  min-width: 150px;
+  max-height: 100%;
+  min-height: 200px;
+  background-image: url("../images/blog-img.png");
   border-radius: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .img3 {
-  height: 300px;
-  width: 400px;
-  background-image: url("../images/project-img.png");
   position: relative;
+  max-width: 100%;
+  min-width: 150px;
+  max-height: 100%;
+  min-height: 200px;
+  background-image: url("../images/project-img.png");
   border-radius: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .navBttn {
   all: unset;
+  text-decoration: none;
   cursor: pointer;
   background: #9b77da;
   color: #fff;
@@ -87,9 +102,25 @@
   font-weight: 500;
   line-height: normal;
   padding: 5px 10px;
+  border-radius: 10px;
   position: absolute;
-  bottom: 30px;
+  bottom: 0;
   left: 50%;
   transform: translate(-50%, -50%);
-  border-radius: 10px;
+}
+
+.textComp1 h3 {
+  padding: 50px 150px 0px 150px;
+  margin: 0;
+  color: #39065a;
+  font-family: Nunito Sans;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.latestBlog {
+  padding: 0px 150px 50px 150px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 64px;
 }
